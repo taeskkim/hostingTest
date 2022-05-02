@@ -1,0 +1,205 @@
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Headers · Bootstrap v5.1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/"> 
+    <link rel="stylesheet" href="resources/css/plugin/datepicker/bootstrap-datepicker.css">
+    <!--달력은 j쿼리 필수, j쿼리 먼저 태그하고 부트스트랩 데이트 피커 태그순서-->  
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js" 
+    integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/headers.css" rel="stylesheet">
+    <link href="css/footers.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+  </head>
+ 
+  <body>
+    
+    <!-- <header> -->
+    
+    <div class="container themed-container" style="background-color: #6ab1e4;">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img src="C:\ktsdev\work\project3team\html\img\예사날logo.png"  class="img" alt="..." height="40" width="40">&nbsp;        
+          <span class="fs-4">예사날</span>
+        </a>    
+
+        <ul class="nav nav-pills">
+            <button type="button" href="reserve" class="btn btn-secondary">예약내역</button>&nbsp;           
+            <button type="button" href="bisMember" class="btn btn-secondary">사업자</button>&nbsp;           
+            <button type="button" href="login" class="btn btn-secondary">로그인</button>&nbsp;           
+            <button type="button" href="join" class="btn btn-secondary">회원가입</button>           
+        </ul>
+        </header>
+      </div>
+      <!-- <main> -->
+       <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item text-center" style="background-color: skyblue;"> 예약한 업체명</li>
+                    <li class="list-group-item">예약한 날짜 : 
+                        <label for="staticEmail" class="col-sm-2 col-form-label">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="2022-03-31">
+                       </label>
+                    </li>
+                    <li class="list-group-item">예약한 방문 시간 : 
+                        <label for="staticEmail" class="col-sm-2 col-form-label">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="00시00분">
+                       </label>
+                    </li>
+                    <li class="list-group-item">인원 수 : 
+                        <label for="staticEmail" class="col-sm-2 col-form-label">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value=" 2명 ">
+                       </label>
+                    </li>
+                    <li class="list-group-item">요청사항 <br>
+                            <label for="staticEmail" class="col-sm-12 col-form-label">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="주문 요청 사항 입력">
+                           </label>
+                        </li>
+                  </ul>
+                </div>
+                <!-- 중간 공백 레이아웃 -->
+                <div class="col-2"> </div>
+
+              <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item text-center" style="background-color: skyblue; width: 25rem; ">예약 시 안내 사항</li>
+                        <textarea style="height: 220px; width: 25rem;">his is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+                            Second headingThis is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</h4>
+                        </textarea>   
+                    </ul>
+                </div>
+            </div>
+
+            <div class="p-4"></div>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item" style="background-color: skyblue; width: 7rem; "> 주문확인 </li>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                  <th scope="col">메뉴코드</th>
+                                  <th scope="col">메뉴명</th>
+                                  <th scope="col">가격</th>
+                                  <th scope="col">선택</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>짜장면</td>
+                                  <td>7000</td>
+                                  <td><div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                                        <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                        </label>
+                                      </div>
+                                        
+                                    </label>
+                                  </div></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>짬뽕</td>
+                                  <td>9000</td>
+                                  <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                                    <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                    </label>
+                                  </div>
+                                        
+                                    </label>
+                                  </div></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>탕수육</td>
+                                  <td>7000</td>
+                                  <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                                    <label class="form-check-label" for="flexCheckDisabled">
+                                    </label>
+                                  </div>
+                                        
+                                    </label>
+                                  </div></td>
+                                </tr>
+                               </tbody>
+                          </table>
+                          <input class="form-control" type="text" value="주문 금액 확인 : " aria-label="readonly input example" value="" readonly>
+                      </ul>
+                    </div>
+                    <div class="col-2"> </div>
+    
+                  <div class="col">
+                            <ul class="list-group" style="width: 15rem;">
+                                <li class="list-group-item" style="background-color: skyblue; width: 8rem;">결제 수단</li>
+                      <div class="card">
+                                <li class="list-group-item">
+                                    결제 수단을 선택해 주세요.
+                                </li> 
+                                <li class="list-group-item" style="background-color: #dfe3e6; width: 15rem;">휴대폰 결제
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1"></label>
+                                </li>
+                                <li class="list-group-item" style="background-color: #dfe3e6; width: 15rem;">카드 결제
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1"></label>
+                                 </li>
+                                <li class="list-group-item" style="background-color: #dfe3e6; width: 15rem;">카카오 페이
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1"></label>
+                                 </li>
+                            </ul>
+                      </div>
+                 </div>
+                </div>
+                <div class="p-4 row">
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="card"></div>
+                        <ul class="list-group">
+                            <li class="list-group-item text-center" style="background-color: skyblue; ">예약 내용 확인</li>
+                            <li class="list-group-item"> 예약하신 내용과 동일합니까?
+                                <input class="form-check-input" type="checkbox" value="동의" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                           </li> 
+                        </ul>
+                    </div>
+                    
+                  <div class="p-4 row"></div>
+                    <div class="d-grid gap-2 col-2 mx-auto">
+                        <button class="btn btn-primary p-4" type="button">결제하기</button>
+                      </div>
+
+    <!-- <footer> -->
+
+    <div class="p-3"></div>
+    
+    <div class="container themed-container" style="background-color: #dfe3e6;">
+      <footer class=" d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+        <ul class="nav nav-pills">
+          <button type="button" class="btn btn-secondary">고객센터</button>&nbsp;           
+          <button type="button" class="btn btn-secondary">회사소개</button>&nbsp;           
+        </ul>
+      </footer>
+    </div>   
+  </body>
+</html>      
+
